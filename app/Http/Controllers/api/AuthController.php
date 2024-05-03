@@ -14,6 +14,7 @@ class AuthController extends Controller
 {
     public function signup(SignUpRequest $request)
     {
+        //testing
         try {
             $input = $request->only('name', 'password', 'email');
             User::create($input);
