@@ -17,7 +17,8 @@ class AuthController extends Controller
         //testing
         try {
             $input = $request->only('name', 'password', 'email');
-            User::create($input);
+            
+        User::create($input);
             return response()->json([
                 'message' => "Successfully signed up"
             ]);
